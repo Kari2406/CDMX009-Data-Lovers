@@ -30,10 +30,10 @@ var ctx = document.getElementById('myChart2');
 var myChart = new Chart(ctx, {
     type: 'scatter',
     data: {
-        labels: ['Yellow', 'Green', 'Purple'],
+        labels: ['Español', 'Inglés', 'Chino'],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3],
+            data: [44, 4, 2],
             backgroundColor: [
                 'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
