@@ -1,15 +1,11 @@
-
-
-
-
 var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['Yellow', 'Green', 'Purple'],
+        labels: ['Español', 'Inglés', 'Chino'],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3],
+            data: [4, 44, 2],
             backgroundColor: [
                 'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
