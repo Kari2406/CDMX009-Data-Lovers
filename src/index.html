@@ -25,73 +25,129 @@
     </div>
   </header>
   <main>
-    <section class="margin-top">
-      <div class="container card-hardData">
-        <div class="col-4">
-          <div class="subtitle">
-            <h3>Total de pacientes</h3>
-          </div>
-          <div class="card">
-            <div class="width-data">
-              <p class="data blue-line"><span class="number-bold">22</span> <br>Mujeres</p>
-            </div>
-            <div class="width-data">
-              <p class="data"><span class="number-bold">28</span> <br>Hombres</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="margin-top">
-      <div class="container">
-        <div class="col-8">
-          <div class="tab">
-            <div class="btn-tab">
-              <div class="first-btn width-btn">
-                <a href="#">Gráficas</a> 
-              </div>
-              <div class="width-btn">
-                <a href="#">Pacientes</a>  
-              </div>
-            </div>
-            <div class="allCharts">
-              <div class="charts´">
-                <canvas id="myChart" width="400" height="400"></canvas>
-              </div>
-              <div class="charts">
-                <canvas id="myChart2" width="400" height="400"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="margin-top">
-      <div class="container">
-        <div class="col-8">
-          <div class="tab-Patients">
-            <div class="btn-tab">
-              <div class="first-btn width-btn">
-                <a href="#">Gráficas</a> 
-              </div>
-              <div class="width-btn">
-                <a href="#">Pacientes</a>  
-              </div>
-            </div>
-            <div class="allCharts">
-              <div class="charts´">
-                <canvas id="myChart" width="400" height="400"></canvas>
-              </div>
-              <div class="charts">
-                <canvas id="myChart2" width="400" height="400"></canvas>
-              </div>
-            </div>
-  
-          </div>
-        </div>
 
+
+    <section>
+      <div class="container">
+        <div class="margin-top">
+          <div class="col-4">
+            <div class="subtitle">
+              <h3>Total de pacientes</h3>
+            </div>
+            <div class="card">
+              <div class="width-data">
+                <p class="data blue-line"><span class="number-bold">22</span> <br>Mujeres</p>
+              </div>
+              <div class="width-data">
+                <p class="data"><span class="number-bold">28</span> <br>Hombres</p>
+              </div>
+            </div>
+            <!-- mobile view -->
+            <!-- mobile view -->
+            <div></div>
+            <div class="desktop-view">
+              <div class="margin-top">
+                <div class="col-6">
+                  <div class="card2">
+                    <div class="subtitle">
+                      <h3>Idioma</h3>
+                    </div>
+                    <div class="charts">
+                      <canvas id="myChart" width="400" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card2">
+                    <div class="subtitle">
+                      <h3>Estado civil</h3>
+                    </div>
+                    <div class="charts">
+                      <canvas id="myChart3" width="400" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="margin-top desktop-view">
+              <div class="col-12 margin-top">
+                <div class="card2">
+                  <div class="subtitle">
+                    <h3>Etnia</h3>
+                  </div>
+                  <div class="charts">
+                    <canvas id="myChart2" width="400" height="150"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="tab">
+              <ul class="tabs" role="tablist">
+                <li class="mobile-view">
+                    <input type="radio" name="tabs" id="tab1" checked />
+                    <label for="tab1" 
+                      role="tab" 
+                      aria-selected="true" 
+                      
+                      aria-controls="panel1" 
+                      tabindex="0"
+                    >
+                      Gráficas
+                    </label>
+                    <div id="tab-content1" 
+                         class="tab-content" 
+                         role="tabpanel" 
+                         aria-labelledby="description" 
+                         aria-hidden="false">
+                         <div class="card2">
+                          <div class="subtitle">
+                            <h3>Idioma</h3>
+                          </div>
+                          <div class="charts">
+                            <canvas id="myChart-" width="400" height="400"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-12 margin-top">
+                          <div class="card2">
+                            <div class="subtitle">
+                              <h3>Estado civil</h3>
+                            </div>
+                            <div class="charts">
+                              <canvas id="myChart2-" width="400" height="400"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="tabs" id="tab2" />
+                    <label for="tab2"
+                           role="tab" 
+                           aria-selected="false" 
+                           aria-controls="panel2" 
+                           tabindex="0">Pacientes</label>
+                    <div id="tab-content2" 
+                         class="tab-content"
+                         role="tabpanel" 
+                         aria-labelledby="specification" 
+                         aria-hidden="true">
+                      <p>Aquí va una tabla :v</p>
+                    </div>
+                </li>
+            </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
       </div>
     </section>
+
+
   </main>
   <script src="../node_modules/chart.js/dist/Chart.js"></script>
   <script src="charts.js"></script>

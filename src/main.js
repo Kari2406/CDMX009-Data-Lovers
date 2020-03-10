@@ -1,6 +1,5 @@
 import { example } from './data.js';
 
-
-
-console.log(example);
-
+let table = () => {
+    let myTable =  document.getElementById('tab-content2'),
+}
