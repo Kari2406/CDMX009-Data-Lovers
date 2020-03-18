@@ -75,7 +75,7 @@ const openModal = (cleanData, cardPatient) => {
           <div class="iconPatient"></div>
           <div clas="infoPatient">
             <h4 class ="titlePatient"><b>${cleanData[i].name}</b></h4>
-              <ul>
+              <ul> 
                 <li><b>ID: </b>${cleanData[i].id}</li>
                 <li><b>Sexo: </b>${cleanData[i].gender}</li>
                 <li><b>Fecha de nacimiento: </b>${cleanData[i].birthDate}</li>
