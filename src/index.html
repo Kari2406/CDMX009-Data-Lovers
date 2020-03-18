@@ -25,8 +25,6 @@
     </div>
   </header>
   <main>
-
-
     <section>
       <div class="container">
         <div class="margin-top">
@@ -42,9 +40,6 @@
                 <p class="data"><span class="number-bold">28</span> <br>Hombres</p>
               </div>
             </div>
-            <!-- mobile view -->
-            <!-- mobile view -->
-            <div></div>
             <div class="desktop-view">
               <div class="margin-top">
                 <div class="col-6">
@@ -82,63 +77,60 @@
               </div>
             </div>
           </div>
-
           <div class="col-8">
             <div class="tab">
               <ul class="tabs" role="tablist">
                 <li class="mobile-view">
-                    <input type="radio" name="tabs" id="tab1" checked />
-                    <label for="tab1" 
-                      role="tab" 
-                      aria-selected="true" 
-
-                      aria-controls="panel1" 
-                      tabindex="0"
-                    >
-                      Gráficas
-                    </label>
-                    <div id="tab-content1" 
-                         class="tab-content" 
-                         role="tabpanel" 
-                         aria-labelledby="description" 
-                         aria-hidden="false">
-                         <div class="card2">
-                          <div class="subtitle">
-                            <h3>Idioma</h3>
-                          </div>
-                          <div class="charts">
-                            <canvas id="myChart-" width="400" height="400"></canvas>
-                          </div>
-                        </div>
-                        <div class="col-12 margin-top">
-                          <div class="card2">
-                            <div class="subtitle">
-                              <h3>Estado civil</h3>
-                            </div>
-                            <div class="charts">
-                              <canvas id="myChart2-" width="400" height="400"></canvas>
-                            </div>
-                          </div>
-                        </div>
+                  <input type="radio" name="tabs" id="tab1" checked />
+                  <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">
+                    Gráficas
+                  </label>
+                  <div id="tab-content-charts" class="tab-content" role="tabpanel" aria-labelledby="description"
+                    aria-hidden="false">
+                    <div class="card2">
+                      <div class="subtitle">
+                        <h3>Idioma</h3>
+                      </div>
+                      <div class="charts">
+                        <canvas id="myChart-" width="400" height="400"></canvas>
+                      </div>
+                    
                     </div>
+                    <div class="col-12 margin-top">
+                      <div class="card2">
+                        <div class="subtitle">
+                          <h3>Estado civil</h3>
+                        </div>
+                        <div class="charts">
+                          <canvas id="myChart3-" width="400" height="400"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 margin-top">
+                      <div class="card2">
+                        <div class="subtitle">
+                          <h3>Etnia</h3>
+                        </div>
+                        <div class="charts">
+                          <canvas id="myChart2-" width="400" height="400"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li>
-                    <input type="radio" name="tabs" id="tab2" />
-                    <label for="tab2"
-                           role="tab" 
-                           aria-selected="false" 
-                           aria-controls="panel2" 
-                           tabindex="0">Pacientes</label>
-                    <div id="tab-content2" 
-                         class="tab-content"
-                         role="tabpanel" 
-                         aria-labelledby="specification" 
-                         
-                         aria-hidden="true">
-                      <p>Aquí va una tabla :v</p>
+                  <input type="radio" name="tabs" id="tab2" />
+                  <label for="tab2" role="tab" aria-selected="false" aria-controls="panel2"
+                    tabindex="0">Pacientes</label>
+                  <div id="tab-content-table" class="tab-content cardPatient" role="tabpanel" aria-labelledby="specification"
+                    aria-hidden="true">
+                    <div id="cardContainer">
+                     
                     </div>
+                  </div>
+ 
                 </li>
-            </ul>
+              </ul>
             </div>
 
           </div>
@@ -150,6 +142,7 @@
 
 
   </main>
+
   <script src="../node_modules/chart.js/dist/Chart.js"></script>
   <script src="charts.js"></script>
   <script type="module" src="main.js"></script>
