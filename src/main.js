@@ -65,9 +65,12 @@ const createTable = () => {
 
  //Interacción por paciente
 let cardPatient = document.getElementsByClassName('clickName');
+
 const openModal = (cleanData, cardPatient) => {
+  
   for (let i = 0; i < cardPatient.length; i++) {
     cardPatient[i].addEventListener('click', () => {
+      document.getElementById('cardContainer').style.display='block';
       document.getElementById('cardContainer').innerHTML = `
       <div id="modal1" class="modal">
           <div class="infoPatient">
@@ -91,3 +94,17 @@ const openModal = (cleanData, cardPatient) => {
     });
 }
 }
+
+
+
+//Filtro por paciente
+let newCleanData = cleanData.map((cleanData) => {
+  return cleanData.name;
+});
+//console.log(newCleanData.sort())
+const filterDataName = (typeName) => {
+  return newCleanData.filter((el) => {
+    return el.toLowerCase().indexOf(typeName.toLowerCase()) > -1;
+  });
+}
+console.log(filterDataName("Ca"));

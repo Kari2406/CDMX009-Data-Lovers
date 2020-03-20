@@ -285,16 +285,20 @@ p.link a:hover {
 }
 
 /*Card pacientes*/
-
-.modal{
+.card-modal{
+  display: none;
+  position: fixed;
+  z-index: 100;
+  margin-top: 30px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   padding: 30px;
+}
+.modal{
   font-family: "Roboto";
   color: #5e6973;
   letter-spacing: 1px;
-  margin-top: 30px;
 }
 .infoPatient{  
 
@@ -307,9 +311,6 @@ p.link a:hover {
 .infoPatient ul li{
   list-style: none;
   padding: 5px 0px;
-}
-.iconPatient img{
-  width: 10%;
 }
 
 .close{
@@ -359,8 +360,10 @@ p.link a:hover {
   .tabs li{
     width: 100%;
   }
-  .modal{
-    width: 50%;
+
+  .card-modal{
+    left: 30% ;
+    top: 30%;
   }
   
 }
