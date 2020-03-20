@@ -237,12 +237,13 @@ p.link a:hover {
 
 
 .table{
+  overflow: auto;
+  height: 770px;
   border-collapse: collapse;
   width: 100%;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: block;
-  overflow-x: auto;
   border-radius: 20px;
 }
 .tableHeader{
@@ -284,16 +285,37 @@ p.link a:hover {
 }
 
 /*Card pacientes*/
-.card_container{
-  width: 400px;
-  height: 400px;
+
+.modal{
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  font-family: "Montserrat";
+  padding: 30px;
+  font-family: "Roboto";
   color: #5e6973;
   letter-spacing: 1px;
+  margin-top: 30px;
 }
+.infoPatient{  
+
+}
+.infoPatient h4{
+  font-size: 1.5em;
+  font-family: "Montserrat";
+  padding-bottom: 20px;
+}
+.infoPatient ul li{
+  list-style: none;
+  padding: 5px 0px;
+}
+.iconPatient img{
+  width: 10%;
+}
+
+.close{
+  float: right;
+}
+
 
 .clickNamePatient{
   background-color: #fff ;
@@ -336,6 +358,9 @@ p.link a:hover {
   }
   .tabs li{
     width: 100%;
+  }
+  .modal{
+    width: 50%;
   }
   
 }

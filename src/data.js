@@ -6,11 +6,7 @@ import data from './data/patient/patient.js';
 // import data from './data/steam/steam.js';
 // import data from './data/steam/worldbank.js';
 
-// esta es una función de ejemplo
-export const example = () => {
-  return 'example';
 
-};
 /*   const patients = data.entry[1].resource.communication[0].language.coding;s */
 //nuevo objeto con la data filtrada
 

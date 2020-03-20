@@ -19,8 +19,7 @@ const createTable = () => {
   let trHeader = document.createElement('tr');
   trHeader.className = 'tableHeader'
   tableBody.appendChild(trHeader);
-  for (let i = 0; i < heading.length; i++)
-  {
+  for (let i = 0; i < heading.length; i++){
     let th = document.createElement('th')
     th.className = 'thHeader'
     th.appendChild(document.createTextNode(heading[i]));
@@ -71,22 +70,21 @@ const openModal = (cleanData, cardPatient) => {
     cardPatient[i].addEventListener('click', () => {
       document.getElementById('cardContainer').innerHTML = `
       <div id="modal1" class="modal">
-        <div clas="cardPatient">
-          <div class="iconPatient"></div>
-          <div clas="infoPatient">
+          <div class="infoPatient">
             <h4 class ="titlePatient"><b>${cleanData[i].name}</b></h4>
               <ul> 
-                <li><b>ID: </b>${cleanData[i].id}</li>
-                <li><b>Sexo: </b>${cleanData[i].gender}</li>
-                <li><b>Fecha de nacimiento: </b>${cleanData[i].birthDate}</li>
-                <li><b>Fecha de muerte: </b>${cleanData[i].death}</li>
-                <li><b>Teléfono: </b>${cleanData[i].phone}</li>
-                <li><b>Dirección: </b>${cleanData[i].address}</li>
-                <li><b>Estado civil: </b>${cleanData[i].maritalStatus}</li>
-                <li><b>Idioma: </b>${cleanData[i].language}</li>
-                <li><b>Etnia: </b>${cleanData[i].etnia}</li>
+                <li>ID: <b>${cleanData[i].id}</b></li>
+                <li>Sexo: <b>${cleanData[i].gender}</b></li>
+                <li>Fecha de nacimiento: <b>${cleanData[i].birthDate}</b></li>
+                <li>Teléfono: <b>${cleanData[i].phone}</b></li>
+                <li>Dirección: <b>${cleanData[i].address}</b></li>
+                <li>Estado civil: <b>${cleanData[i].maritalStatus}</b></li>
+                <li>Idioma: <b>${cleanData[i].language}</b></li>
+                <li>Etnia: <b>${cleanData[i].etnia}</b></li>
               </ul>
-          </div>
+        </div>
+        <div class="close">
+          <b>X</b>
         </div>
       </div>
       `

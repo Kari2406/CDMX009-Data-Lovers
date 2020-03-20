@@ -16,7 +16,9 @@
   <header class="my-header">
     <div class="container flex-box-horizontal">
       <div class="logo">
-        <img src="img/logo-patients_1.svg">
+        <a href="index.html">
+          <img src="img/logo-patients_1.svg">
+        </a>
       </div>
       <div class="user">
         <p>¡Hola Adriana!</p>
@@ -24,7 +26,9 @@
       </div>
     </div>
   </header>
+
   <main>
+    <!-- Charts -->
     <section>
       <div class="container">
         <div class="margin-top">
@@ -76,8 +80,11 @@
                 </div>
               </div>
             </div>
+          </div>     
           </div>
+          <!-- mobile-view -->
           <div class="col-8">
+            <div id="cardContainer" class="card-modal"></div>
             <div class="tab">
               <ul class="tabs" role="tablist">
                 <li class="mobile-view">
@@ -124,15 +131,10 @@
                     tabindex="0">Pacientes</label>
                   <div id="tab-content-table" class="tab-content cardPatient" role="tabpanel" aria-labelledby="specification"
                     aria-hidden="true">
-                    <div id="cardContainer">
-                     
-                    </div>
                   </div>
- 
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>
