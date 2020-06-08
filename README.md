@@ -1,20 +1,21 @@
 # :syringe: EASY PATIENT DATA
 
-### :bulb: CREATIVE PROCESS
+### :bulb: PROCESO CREATIVO 
 
-The first step was to choose the topic among the databases that were provided to us. We decided to work with "Patients in the USA" because we consider that ordering such a database is very useful in the area of health professionals.
+El primero paso fue escoger un tema, se nos dio acceso a varias API relacionadas con temas diversos, se decidió por "pacientes en Estados Unidos", se consideró que el podríamos obtener un resultado útil en el área de la salud.
 
 [EEUU patiens](src/data/patient/patient.json).
-This set provides us with a list of US patients. You can check the documentation of its API in this [link](https://r2.smarthealthit.org/Patient).
+
+Este listado muestra a un grupo de pacientes de Estados Unidos, puedes revisar la documentación de esta API en este link [link](https://r2.smarthealthit.orlag/Patient).
  
-An easily accessible database and consultation on patients could be useful to any area of health (medicine, nursing, stomatology, optometry, psychology, pharmaceuticals, nutrition, etc ...) regardless of whether professionals in the relevant areas are engage in public or private practice.
+La idea fue realizar una base de datos de fácil acceso y consultas sobre pacientes podría ser útil para cualquier área de la salud (medicina, enfermería, estomatología, optometría, psicología, productos farmacéuticos, nutrición, etc.) independientemente de si los profesionales de las áreas relevantes participan en actividades públicas o privadas. 
  
 
-### :question:STUDY OF USERS
- 
-Our second step was to survey various health professionals to identify which patient data were most important or useful in organizing a medical database. We carried out the survey in order to get closer to the users, to know their needs and perspectives when using a digital database as a working tool.
+### :question:Estudio de los usuarios
 
-Here is the questionnaire:
+El segundo paso fue consultar con varios profesionales de la salud para identificar qué datos de pacientes eran más importantes o útiles para organizar una base de datos médica. Realizamos la encuesta para acercarnos a los usuarios, conocer sus necesidades y perspectivas al utilizar una base de datos digital como herramienta de trabajo. 
+
+Aquí las preguntas :
 
 <img src="src/img/encuesta1.png"> 
 <img src="src/img/encuesta1.png"> 
@@ -25,110 +26,78 @@ Here is the questionnaire:
 <img src="src/img/encuesta6.png"> 
 
 
-### :pencil:RESULTS
+### :pencil:Resultados
 
-Among the professionals who answered the questionnaire are: General Dentists, Pediatric Dentists, Endodontists, Nutriologists, Nurses, Psychologists, Doctors and Optometrists.
+Entre los profesionales que respondieron el cuestionario se encuentran: dentistas generales, dentistas pediátricos, endodoncistas, neurólogos, enfermeras, psicólogos, médicos y optometristas.
 <img src="src/respuestas1.png"> 
 
-The data that a patient is asked to fill out an identification form are: name, age, address, sex, date of birth, marital status.
+Los datos que se le pide a un paciente que complete un formulario de identificación son: nombre, edad, dirección, sexo, fecha de nacimiento, estado civil.
 <img src="src/img/respuestas2.png"> 
 
-In a 61.7% the personnel of the health area expressed that they order the files by the patient's last name. 
+En un 61.7%, el personal del área de salud expresó que ordenan los archivos por el apellido del paciente.
 <img src="src/img/respuestas3.png"> 
 
-87.2% said they use a paper clinical record and only 12.8% use digital clinical records.
+El 87.2% dijo que usa un registro clínico en papel y solo el 12.8% usa registros clínicos digitales.
 <img src="src/img/respuestas4.png">
 
-Current condition, sex, date of last consultation and place of origin are the data that could be statistically observed in medical databases.
+El estado civil, el sexo, la fecha de la última consulta y el lugar de origen son los datos que podrían observarse estadísticamente en las bases de datos médicas.
 <img src="src/img/respuestas5.png">
 
-The colors that most related to digital clinical record were: blue, green and white. Which were taken at the time of designing the user interface.
+Los colores más relacionados con la historia clínica digital fueron: azul, verde y blanco. Los cuales fueron tomadas a la hora de diseñar la interfaz de usuario.
 <img src="src/img/respuestas6.png"> 
 
-The last question was placed to be able to implement in a future database, according to the specific needs of each professional.
+La última pregunta se realizó para poder implementarla en una base de datos futura, de acuerdo con las necesidades específicas de cada profesional.
 <img src="src/img/respuestas7.png"> 
 
-### :rotating_light: PROBLEM
+### :rotating_light: Problemática
 
-Staff health area daily faces query processing and data in large quantities, either by the number of patients who handles or data collected from each patient; which can become a difficult organization, annoyance and carelessness in the medical database. Furthermore, due to the results of the survey that the medical personnel carry out, it is not very close to digital or new technologies when it comes to administration.
+El personal del área de la salud enfrenta diariamente el procesamiento de consultas y los datos en grandes cantidades, ya sea por el número de pacientes que maneja o los datos recopilados de cada paciente; lo que puede convertirse en una organización difícil, molesta y descuidada en la base de datos médica. Además, debido a los resultados de la encuesta que realiza el personal médico, no se acerca mucho a las tecnologías digitales o nuevas cuando se trata de administración.
 
-### :computer: WHAT DO WE PROPOSE?
+### :computer: Propuesta
 
-A digital medical database to facilitate patient management and consulting in a small office, clinic, and even a hospital.
+Una base de datos médica digital para facilitar el manejo y la consulta del paciente en una pequeña oficina, clínica e incluso un hospital.
 
+### :bust_in_silhouette: Historias de Usuario
 
-### :hourglass_flowing_sand:LET'S DO IT!
+:uno: 
 
-To have a homogeneous distribution of the tasks to be carried out, we used the Trello tool, so our SCRUM could be consulted and modified by any of the two team members.
-<img src="src/img/trello.png"> 
+Como : Profesional de la salud.
 
-### :bust_in_silhouette: USER STORIES
+Quiero: Fácil acceso a un listado de pacientes.
 
-:one: 
+Para: Agilizar el proceso de búsqueda de los datos de un paciente.
 
-ME: As a health professional.
+:dos:
 
-I WANT: easy access to patient data.
+Como: Como usuario de Easy Patients Data.
 
-TO: expedite the search for the patient identification card.
+Quiero: Poder visualizar el sitio en cualquier dispositivo.
 
-:two:
-
-ME: As a user of Easy Patient Data
-
-I WANT: to be able to view the website on any device
-
-TO: keep patient data readily accessible
-
-:three:
-
-ME: As a user of Easy Patient Data
-
-I WANT: choose in the mobile version to see the graphs or the table
-
-TO: not saturate myself with information on a small screen
-
-:four: 
-ME: As a user of Easy Patient Data
-
-I WANT: to be able to search each patient individually
-
-TO: have access to complete patient data
+Para: Tener acceso fácil y rápido a los datos de cada paciente.
 
 
-### :heavy_check_mark: CRITERIA OF ACCEPTANCE
+### :vhs:Prototipo de baja fidelidad 
 
--To stick to the high fidelity prototype
-
--Complete database
-
--Filter data: id, name, surname, gender, date of birth, date of death, address, telephone, ethnicity, language.
-
--Consult and find individual data for each patient.
-
-
-### :vhs:LOW FIDELITY PROTOTYPE
-
-During this stage we design our user interface with pencil, we order the data based on the results of the questionnaire, we think about the name of our web application, the distribution of the elements to be consulted and what the application screen would look like working on a screen desktop and on a cell phone screen.
+Durante esta etapa, diseñamos nuestra interfaz de usuario con lápiz, ordenamos los datos en función de los resultados del cuestionario, pensamos en el nombre de nuestra aplicación web, la distribución de los elementos a consultar y cómo se vería en una pantalla de escritorio y en la pantalla de un teléfono celular.
 
 <img src="src/img/wireframe1.jpg"> 
 
 <img src="src/img/wireframe2.jpg"> 
 
-We seek feedback on three occasions from our coaches and also from our bootcamp partners.
+Solicitamos feedback en tres ocasiones de nuestros coaches y también de nuestras compañeras del bootcamp.
 
-### :iphone: HIGH FIDELITY PROTOTYPE
+### :iphone: Prototipo de alta fidelidad
 
-To develop this part we applied the feedback that our coach and our colleagues gave us, as well as taking into account the colors that the health personnel said to associate more with a digital clinical record, which were: blue, green and white. The prototype was developed in Figma.
+Para desarrollar esta parte, tomamos en cuenta los comentarios por parte de nuestros coach y nuestras compañeras, así como los de los encuestados. El prototipo fue desarrollado en Figma.
 
-Prototype for cell phone display developed
+Prototipo para vista móvil
 
 <img src="src/img/prototipoCelular.png">
 
 <img src="src/img/prototipoCelular2.png">
 
 
-Desktop screen prototype developed
+Prototipa para vista de escritorio
 
 <img src="src/img/prototipoEscritorio.png">
 
